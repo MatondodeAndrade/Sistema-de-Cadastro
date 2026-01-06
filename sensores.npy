@@ -1,0 +1,13 @@
+import numpy as np
+import os
+
+os.makedirs("dados", exist_ok=True)
+
+#Gerando 1000 linhas com temperatura, umidade, pressão
+
+dados = np.random.rand(1000 , 3)*[35, 100,40]+[5,0,960]
+np.save("dados/sensores.npy", dados)
+
+
+
+
